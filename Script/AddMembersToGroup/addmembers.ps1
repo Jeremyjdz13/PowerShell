@@ -1,0 +1,1 @@
+﻿Import-CSV membersforgroup.csv | ForEach {Add-DistributionGroupMember -Identity "marketingmanagers" -Member $_.Name}
